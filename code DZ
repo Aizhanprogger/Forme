@@ -1,0 +1,42 @@
+package com.company;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+
+public class Main {
+
+    public static void main(String[] args) throws IOException {
+        // write your code here
+
+        BufferedReader a = new BufferedReader(new InputStreamReader(System.in));
+
+        int t=0;
+
+        while (true) {
+
+
+            System.out.println("ФИО: ");
+            String name=a.readLine();
+
+
+            if (name.equals("exit")) {
+                break;
+            }
+
+
+            System.out.println("Пол(Ж или М): ");
+            String pol =a.readLine();
+
+            System.out.println("Возраст: ");
+            int age = Integer.parseInt(a.readLine());
+
+                 t++;
+            System.out.println(t+")"+name + " " + age + " " + pol);
+
+        }
+
+            }
+
+        }
+
